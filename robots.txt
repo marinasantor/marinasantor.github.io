@@ -1,0 +1,4 @@
+# Sitio en construcción: se pide a los buscadores no indexarlo todavía.
+# Cuando el sitio esté terminado, reemplazar por:  Allow: /
+User-agent: *
+Disallow: /
