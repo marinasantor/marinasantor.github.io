@@ -636,6 +636,17 @@ p:last-child{margin-bottom:0}
 }
 .historia .suelta{margin-bottom:.5em}
 
+/* ---------- fotos dentro de la historia ---------- */
+.historia-foto{margin:40px auto;max-width:420px}
+.historia-foto img{
+  width:100%;height:auto;border-radius:22px;
+  box-shadow:0 26px 48px -32px rgba(74,74,71,.6);
+}
+.historia-foto figcaption{
+  margin-top:12px;text-align:center;
+  font-family:var(--mano);font-size:1.15rem;color:var(--tinta-cl);
+}
+
 
 /* ---------- añadidos para las páginas internas ---------- */
 
