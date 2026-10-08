@@ -186,12 +186,12 @@ p:last-child{margin-bottom:0}
 /* ---------- hero ---------- */
 
 .hero{padding:clamp(34px,3.4vw,54px) 0 clamp(40px,4vw,62px);background:linear-gradient(170deg,var(--marfil) 0%,var(--crema) 62%,var(--rosa-cl) 100%)}
-.hero__in{display:grid;grid-template-columns:58fr 42fr;gap:clamp(24px,3.4vw,52px);align-items:center}
+.hero__in{display:grid;grid-template-columns:57fr 43fr;gap:clamp(24px,3.4vw,52px);align-items:center}
 
 /* Fotografía del hero, vertical y con recuadro delineado */
-.hero__foto{position:relative;width:100%;max-width:360px;margin-inline:auto}
+.hero__foto{position:relative;width:100%;max-width:380px;margin-inline:auto}
 .hero__foto img{
-  width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 12%;
+  width:100%;height:auto;          /* proporción original de la foto, sin recortes */
   border-radius:20px;display:block;
   box-shadow:0 26px 48px -36px rgba(74,74,71,.55);
 }
@@ -212,7 +212,7 @@ p:last-child{margin-bottom:0}
 
 @media (max-width:900px){
   .hero__in{grid-template-columns:1fr}
-  .hero__foto{order:2;max-width:300px;margin:0 auto}
+  .hero__foto{order:2;max-width:320px;margin:0 auto}
   .hero__tx{order:1}
   .hero .nota--1,.hero .nota--2{display:none}
 }
@@ -699,3 +699,10 @@ a.card{text-decoration:none;color:inherit}
   #marina .partido__tx p,
   #nadaensulugar .partido__tx p{text-align:left}
 }
+
+/* ---------- imagen del espacio presencial en la portada ---------- */
+.nesl-foto{
+  width:100%;border-radius:22px;overflow:hidden;
+  box-shadow:0 26px 48px -36px rgba(74,74,71,.5);
+}
+.nesl-foto img{width:100%;height:auto;display:block}
