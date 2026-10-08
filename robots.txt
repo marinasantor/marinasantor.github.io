@@ -2,4 +2,3 @@
 # Cuando esté terminado, reemplazar por:  Allow: /
 User-agent: *
 Disallow: /
-
