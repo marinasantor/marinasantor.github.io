@@ -469,7 +469,10 @@ p:last-child{margin-bottom:0}
 
 /* ---------- recursos descargables ---------- */
 
-.recursos{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:24px}
+.recursos{display:grid;grid-template-columns:repeat(5,1fr);gap:24px}
+@media (max-width:1100px){.recursos{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:760px){.recursos{grid-template-columns:repeat(2,1fr);gap:18px}}
+@media (max-width:460px){.recursos{grid-template-columns:1fr}}
 .rec{display:flex;flex-direction:column}
 .rec__tapa{
   position:relative;aspect-ratio:3/4;border-radius:16px;overflow:hidden;
@@ -732,9 +735,16 @@ a.card{text-decoration:none;color:inherit}
 }
 .prod__tapa img{width:100%;height:100%;object-fit:cover;display:block}
 
-.rec__tapa--foto{background:none;border:0;padding:0}
+.rec__tapa--foto{
+  background:none;border:0;padding:0;display:block;position:relative;
+  aspect-ratio:3/4;border-radius:16px;overflow:hidden;
+}
 .rec__tapa--foto::after{display:none}
-.rec__tapa--foto img{width:100%;height:100%;object-fit:cover;display:block}
+.rec__tapa--foto img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:center center;
+  border-radius:16px;display:block;
+}
 .rec__tapa--foto .rec__cerrojo{z-index:3}
 
 /* ---------- foto de la página de Educadores ---------- */
