@@ -735,6 +735,7 @@ a.card{text-decoration:none;color:inherit}
 .rec__tapa--foto{background:none;border:0;padding:0}
 .rec__tapa--foto::after{display:none}
 .rec__tapa--foto img{width:100%;height:100%;object-fit:cover;display:block}
+.rec__tapa--foto .rec__cerrojo{z-index:3}
 
 /* ---------- foto de la página de Educadores ---------- */
 .educa-foto{
