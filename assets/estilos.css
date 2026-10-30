@@ -783,3 +783,24 @@ a.card{text-decoration:none;color:inherit}
   width:100%;height:auto;display:block;
   border-radius:22px;          /* por si algún navegador no recorta el contenedor */
 }
+
+/* ---------- textos justificados en Cursos y Talleres ---------- */
+#webinars .partido__tx p,
+.paso p,
+.faq__r p{
+  text-align:justify; text-justify:inter-word;
+  -webkit-hyphens:auto; hyphens:auto;
+}
+@media (max-width:620px){
+  #webinars .partido__tx p,
+  .paso p,
+  .faq__r p{text-align:left}
+}
+
+/* ---------- foto de la página de Asesorías ---------- */
+.asesoria-foto{
+  width:100%;max-width:380px;margin-inline:auto;
+  border-radius:22px;overflow:hidden;
+  box-shadow:0 26px 48px -36px rgba(74,74,71,.55);
+}
+.asesoria-foto img{width:100%;height:auto;display:block;border-radius:22px}
