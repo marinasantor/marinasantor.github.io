@@ -804,3 +804,10 @@ a.card{text-decoration:none;color:inherit}
   box-shadow:0 26px 48px -36px rgba(74,74,71,.55);
 }
 .asesoria-foto img{width:100%;height:auto;display:block;border-radius:22px}
+
+/* ---------- texto de "Un encuentro, no una clase" ---------- */
+#como-es .partido__tx p{
+  text-align:justify; text-justify:inter-word;
+  -webkit-hyphens:auto; hyphens:auto;
+}
+@media (max-width:620px){ #como-es .partido__tx p{text-align:left} }
