@@ -768,3 +768,14 @@ a.card{text-decoration:none;color:inherit}
   -webkit-hyphens:auto; hyphens:auto;
 }
 @media (max-width:620px){ #capacitacion .partido__tx p{text-align:left} }
+
+/* ---------- bloque de webinars ---------- */
+.webinar-lead{
+  font-family:var(--serif);font-size:1.3rem;font-style:italic;
+  color:var(--azul-osc);margin-bottom:.9em;
+}
+.webinar-foto{
+  width:100%;border-radius:22px;overflow:hidden;
+  box-shadow:0 26px 48px -36px rgba(74,74,71,.55);
+}
+.webinar-foto img{width:100%;height:auto;display:block}
