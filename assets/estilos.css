@@ -469,8 +469,8 @@ p:last-child{margin-bottom:0}
 
 /* ---------- recursos descargables ---------- */
 
-.recursos{display:grid;grid-template-columns:repeat(5,1fr);gap:24px}
-@media (max-width:1100px){.recursos{grid-template-columns:repeat(3,1fr)}}
+.recursos{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px, 3.4vw, 52px)}
+
 @media (max-width:760px){.recursos{grid-template-columns:repeat(2,1fr);gap:18px}}
 @media (max-width:460px){.recursos{grid-template-columns:1fr}}
 .rec{display:flex;flex-direction:column}
@@ -811,3 +811,16 @@ a.card{text-decoration:none;color:inherit}
   -webkit-hyphens:auto; hyphens:auto;
 }
 @media (max-width:620px){ #como-es .partido__tx p{text-align:left} }
+
+/* ---------- foto vertical de NADAENSULUGAR ---------- */
+.nesl-foto-v{
+  width:100%;max-width:360px;margin-inline:auto;
+  border-radius:22px;overflow:hidden;
+  box-shadow:0 26px 48px -36px rgba(74,74,71,.55);
+}
+.nesl-foto-v img{width:100%;height:auto;display:block;border-radius:22px}
+#que-es .partido__tx p{
+  text-align:justify; text-justify:inter-word;
+  -webkit-hyphens:auto; hyphens:auto;
+}
+@media (max-width:620px){ #que-es .partido__tx p{text-align:left} }
