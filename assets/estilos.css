@@ -824,3 +824,10 @@ a.card{text-decoration:none;color:inherit}
   -webkit-hyphens:auto; hyphens:auto;
 }
 @media (max-width:620px){ #que-es .partido__tx p{text-align:left} }
+
+/* ---------- tarjetas de recursos un 20% más chicas ---------- */
+/* Se achica la tarjeta completa, no solo la tapa, para que la imagen
+   y su texto mantengan la proporción entre sí. En celular se deja a todo ancho. */
+@media (min-width:761px){
+  .rec{max-width:80%; margin-inline:auto}
+}
