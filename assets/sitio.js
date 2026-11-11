@@ -33,15 +33,6 @@ Array.prototype.forEach.call(document.querySelectorAll('[data-contador]'), funct
 });
 
 /* captura de correo */
-Array.prototype.forEach.call(document.querySelectorAll('[data-boletin]'), function(f){
-  f.addEventListener('submit', function(e){
-    e.preventDefault();
-    var caja = f.parentNode.querySelector('.mensaje-ok');
-    caja.textContent = 'Anotado. El envío automático todavía no está conectado: por ahora escribinos por WhatsApp y te mandamos el material.';
-    caja.setAttribute('data-v','si');
-  });
-});
-
 /* formulario de cita */
 var fc = document.getElementById('form-cita');
 if (fc) {
