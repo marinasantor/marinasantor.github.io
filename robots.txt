@@ -1,4 +1,5 @@
-# Sitio en construcción: se pide a los buscadores no indexarlo todavía.
-# Cuando esté terminado, reemplazar por:  Allow: /
+# Sitio público. Se permite el rastreo de todas las páginas.
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://marinasantor.com.ar/sitemap.xml

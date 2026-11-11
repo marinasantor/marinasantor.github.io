@@ -388,9 +388,6 @@ p:last-child{margin-bottom:0}
 }
 .wa svg{width:28px;height:28px;fill:currentColor}
 
-/* ---------- cinta de vista previa ---------- */
-#cinta{background:#5f6b58;color:#f4f1ea;font-size:.8rem;text-align:center;padding:9px 16px;line-height:1.45}
-#cinta b{color:#e6bfc0}
 /* =========================================================================
    Componentes de las páginas internas
    ========================================================================= */
