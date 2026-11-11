@@ -62,3 +62,28 @@ if (fc) {
     ok.scrollIntoView({behavior:'smooth', block:'center'});
   });
 }
+
+
+/* carrusel de testimonios */
+(function(){
+  var pista = document.querySelector('.testis');
+  if (!pista) return;
+  var ant = document.querySelector('[data-testi="anterior"]');
+  var sig = document.querySelector('[data-testi="siguiente"]');
+  if (!ant || !sig) return;
+
+  function salto(){
+    var t = pista.querySelector('.testi');
+    return t ? t.getBoundingClientRect().width + 22 : 300;
+  }
+  function refrescar(){
+    var max = pista.scrollWidth - pista.clientWidth - 2;
+    ant.disabled = pista.scrollLeft <= 2;
+    sig.disabled = pista.scrollLeft >= max;
+  }
+  ant.addEventListener('click', function(){ pista.scrollBy({left:-salto(), behavior:'smooth'}); });
+  sig.addEventListener('click', function(){ pista.scrollBy({left: salto(), behavior:'smooth'}); });
+  pista.addEventListener('scroll', refrescar);
+  window.addEventListener('resize', refrescar);
+  refrescar();
+})();
