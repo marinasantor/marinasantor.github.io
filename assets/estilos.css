@@ -831,3 +831,25 @@ a.card{text-decoration:none;color:inherit}
 @media (min-width:761px){
   .rec{max-width:80%; margin-inline:auto}
 }
+
+/* ---------- páginas de texto legal ---------- */
+.prosa{max-width:70ch;margin-inline:auto}
+.prosa h2{
+  font-family:var(--serif);font-size:clamp(1.4rem, 1.05rem + 1.1vw, 1.9rem);
+  color:var(--azul-osc);margin:2em 0 .6em;
+}
+.prosa h2:first-child{margin-top:0}
+.prosa p, .prosa li{
+  color:var(--gris);
+  text-align:justify; text-justify:inter-word;
+  -webkit-hyphens:auto; hyphens:auto;
+}
+.prosa ul{padding-left:1.2em;margin:0 0 1.1em}
+.prosa li{margin-bottom:.45em}
+.prosa a{color:var(--azul-osc);text-decoration:underline;text-underline-offset:3px}
+@media (max-width:620px){ .prosa p, .prosa li{text-align:left} }
+
+.prosa h3{
+  font-family:var(--texto);font-size:1rem;font-weight:700;
+  color:var(--azul);margin:1.4em 0 .4em;
+}
